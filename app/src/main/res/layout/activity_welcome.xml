@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".WelcomeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -26,8 +26,8 @@
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:text="Book Film 11"
-            android:textStyle="bold"
             android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -64,18 +64,18 @@
         android:layout_margin="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_icon">
+
         <EditText
             android:id="@+id/user_name"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:hint="@string/hint_userName"
-         />
+            android:hint="@string/hint_userName" />
 
         <EditText
             android:id="@+id/password"
@@ -83,8 +83,8 @@
             android:layout_height="48dp"
             android:layout_marginBottom="20dp"
             android:hint="@string/hint_password"
-            android:minHeight="48dp"
-            />
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
 
 
         <Button
@@ -117,16 +117,17 @@
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginStart="135dp"
-            android:backgroundTint="#DA1021"
             android:layout_marginTop="40dp"
+            android:backgroundTint="#DA1021"
             android:minHeight="48dp"
             android:text="@string/exit_bt"
             app:cornerRadius="15dp" />
+
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:orientation="horizontal" />
 
 
     </LinearLayout>
